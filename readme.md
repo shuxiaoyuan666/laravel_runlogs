@@ -2,9 +2,10 @@
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Travis](https://img.shields.io/travis/shuxiaoyuan666/laravel_runlogs.svg?style=flat-square)]()
-[![Total Downloads](https://img.shields.io/packagist/dt/shuxiaoyuan666/laravel_runlogs.svg?style=flat-square)](https://packagist.org/packages/sxywy/laravel_runlogs)
+[![Total Downloads](https://img.shields.io/packagist/dt/shuxiaoyuan666/laravel_runlogs.svg?style=flat-square)](https://packagist.org/packages/sxywy/laravel-runlogs)
+
 ## Install
-`composer require shuxiaoyuan666/implogs`
+`composer require sxywy/laravel-runlogs`
 
 ## laravel 使用
 
