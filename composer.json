@@ -1,0 +1,42 @@
+{
+  "name": "sxywy/laravel-runlogs",
+  "description": "针对 laravel 编写的一个composer包，主要是记录一些框架运行日志",
+  "type": "package",
+  "license": "MIT",
+  "keywords": [
+    "laravel"
+  ],
+  "authors": [
+    {
+      "name": "xiaoyuan.shu",
+      "email": "sxy@shuxiaoyuan.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0.2",
+    "illuminate/support": "^9"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sxywy\\LaravelRunLogs\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Sxywy\\LaravelRunLogs\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sxywy\\LaravelRunLogs\\SxywylogsServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "orchestra/testbench": "^7.7|^8.0"
+  }
+}
