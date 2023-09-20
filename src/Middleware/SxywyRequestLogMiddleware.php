@@ -33,6 +33,7 @@ namespace Sxywy\LaravelRunLogs\Middleware;
 use Closure;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Redis;
+use Illuminate\Support\Str;
 
 class SxywyRequestLogMiddleware
 {
@@ -56,7 +57,7 @@ class SxywyRequestLogMiddleware
             if (defined('REQUEST_UNIQUE_UUID')) {
                 $request_id = constant('REQUEST_UNIQUE_UUID');
             } else {
-                $request_id = uniqid(md5(microtime(true) . mt_rand(100000, 999999)), true) . '.' . microtime(true);
+                $request_id = Str::uuid()->toString() . '.' . microtime(true);
                 define('REQUEST_UNIQUE_UUID', $request_id);
             }
 
